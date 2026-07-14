@@ -5,15 +5,6 @@
     --color-background: #C9C3C3;
     --color-primary: #FFFFFF;
 
-    --color-info: #E54848;
-    --color-interests: #325FBE;
-    --color-interests: #325FBE;
-    --color-skills: #FCA311;
-    --color-projects: #53A548;
-    --color-education: #F26419;
-    --color-experience: #EC368D;
-    --color-contact: #5928AC;
-
     --font-annie: var(--font-annie);
     --font-urbanist: var(--font-urbanist);
 }
