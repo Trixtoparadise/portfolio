@@ -1,65 +1,82 @@
-import Image from "next/image";
+import Tile from './ui/tile';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+	return (
+        <main className="flex flex-1 w-full! h-full! px-3! py-3! justify-center! sm:items-start">
+            <Box className="w-full! h-full!">
+                <Stack 
+                    spacing={{ xs: 1, sm: 3}}
+                    direction="row"
+                    className='h-full! relative'
+                >
+                    <Stack
+                        spacing={{ xs: 1, sm: 3}}
+                        className='w-2/7!'
+                    >
+                        <Tile 
+                            title={`Hlamolo Mhlanga`}
+                            subTitle="Web and Mobile Application Developer"
+                            background="info"
+                            height='4.5'
+                            data={['<b><b>Age and Gender:</b></b> 25 years old , Male' , '<b><b>Address:</b></b> House No - 987, Mandlethu, 0458, Mpumalanga.']}
+                        />
+                        <Tile 
+                            title="Interests"
+                            subTitle="What I am passionate about and what I would like to learn."
+                            background="interests"
+                            height='5.5'
+                            data={["Studying <b><b>design</b></b>, the foundation of every system known to mankind and applying the lessons on my <b><b>applications</b></b>, studying the balance relationship between <b><b>form</b></b> and <b><b>function</b></b>, and how it affects the <b><b>user experience</b></b> and <b><b>interaction</b></b>."]}
+                        />
+                    </Stack>
+                    <Stack
+                        spacing={{ xs: 1, sm: 3}}
+                        className='w-3/7!'
+                    >
+                        <Tile 
+                            title="Technical Skills"
+                            subTitle="Languages, Frameworks, Stacks, databases."
+                            background="skills"
+                            height='6.5'
+                            data={['<b><b>Languages:</b></b> C#, C++, Javascript, Typescript.', '<b><b>Backend Frameworks:</b></b> Node.js (Express), ASP.NET Core WebAPI.', '<b><b>Frontend Frameworks:</b></b> React.js, React Native, .NET MAUI', '<b><b>Databases:</b></b>  PostgresSQL, MongoDB Atlas.', '<b><b>Cloud Platforms:</b></b>  Amazon Web Services RDB, Microsoft Azure ASP NET Core Web API, Vercel Next.js application.']}
+                        />
+                        <Tile 
+                            title="Projects"
+                            subTitle="Applications, Databases, Demos, Websites."
+                            background="projects"
+                            height='3.5'
+                            data={['<b><b>www.mooseum.online</b></b>', '<b><b>Inventori</b></b> (Link to source code)', '<b><b>Odyssey</b></b> (link to source code)']}
+                        />
+                    </Stack>
+                    <Stack
+                        spacing={{ xs: 1, sm: 3}}
+                        className='w-2/7!'
+                    >
+                        <Tile 
+                            title="Reach out"
+                            subTitle="For an Interview, discussion or collaboration "
+                            background="contact"
+                            height='2'
+                            data={['Choose how you want to connect.']}
+                        />
+                        <Tile 
+                            title="Experience"
+                            subTitle="Where I’ve worked and what I did there."
+                            background="experience"
+                            height='5'
+                            data={['I worked at <b><b>Nkangala District Municipality</b></b> from July 2024 - June 2026 as an <b><b>Information and Communication Technology</b></b> intern. Rotating in different roles within the department as a service desk operator, assistant to the municipality technician or a reporting analyst.']}
+                        />
+                        <Tile 
+                            title="Education"
+                            subTitle="High school, University"
+                            background="education"
+                            height='3'
+                            data={['I studied at <b><b>Phumzile Secondary School</b></b> and earned a <b><b>National Senior Certificate</b></b> in January 2018.', 'I went on to study <b><b>Computer Science and Applied Mathematics</b></b> at <b><b>Wits University</b></b> and earned a Bachelor of Science in April 2023.']}
+                        />
+                    </Stack>
+                </Stack>
+            </Box>
+        </main>
+	);
 }
