@@ -39,7 +39,7 @@ export default function Tile(props : PropType) {
     const bgColor = designPalette[background] || 'bg-gray-100';
 
     const links = [
-        "https://github.com/Trixtoparadise/mooseum", 
+        "https://www.mooseum.online/", 
         "https://github.com/Trixtoparadise/Inventori", 
         "https://github.com/Trixtoparadise/Odyssey"
     ];
