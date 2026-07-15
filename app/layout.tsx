@@ -28,7 +28,7 @@ export default function RootLayout({
 			lang="en"
 			className={`${annieUseYourTelescope.variable} ${urbanist.className} h-full antialiased`}
 		>
-			<body className="h-screen! overflow-hidden! w-full! flex flex-col bg-background!">{children}</body>
+			<body className="h-auto! md:h-screen! lg:h-screen! overflow-scroll! md:overflow-hidden! lg:overflow-hidden! w-full! flex! flex-col! bg-background!">{children}</body>
 		</html>
 	);
 }
