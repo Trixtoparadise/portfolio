@@ -1,9 +1,15 @@
+"use client"
 import Tile from './ui/tile';
+import * as React from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
+import Click from '@mui/icons-material/PanToolAlt';
+import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button } from '@mui/material';
 
 export default function Home() {
-	return (
+	const [open, setOpen] = React.useState(true);
+        
+    return (
         <main className="flex flex-1 w-full! h-full! px-3! py-3! justify-center! sm:items-start">
             <Box className="w-full! h-full!">
                 <Stack 
@@ -17,7 +23,7 @@ export default function Home() {
                     >
                         <Tile 
                             title={`Hlamolo Mhlanga`}
-                            subTitle="Web and Mobile Application Developer"
+                            subTitle="Web and Mobile Application Developer."
                             background="info"
                             height='4.5'
                             data={['<b><b>Age and Gender:</b></b> 25 years old , Male' , '<b><b>Address:</b></b> House No - 987, Mandlethu, 0458, Mpumalanga.']}
@@ -55,7 +61,7 @@ export default function Home() {
                     >
                         <Tile 
                             title="Reach out"
-                            subTitle="For an Interview, discussion or collaboration "
+                            subTitle="For an Interview, discussion or collaboration."
                             background="contact"
                             height='2'
                             data={['Choose how you want to connect.']}
@@ -69,7 +75,7 @@ export default function Home() {
                         />
                         <Tile 
                             title="Education"
-                            subTitle="High school, University"
+                            subTitle="High school & University."
                             background="education"
                             height='3'
                             data={['I studied at <b><b>Phumzile Secondary School</b></b> and earned a <b><b>National Senior Certificate</b></b> in January 2018.', 'I went on to study <b><b>Computer Science and Applied Mathematics</b></b> at <b><b>Wits University</b></b> and earned a Bachelor of Science in April 2023.']}
@@ -77,6 +83,24 @@ export default function Home() {
                     </Stack>
                 </Stack>
             </Box>
+            <Dialog 
+                open={open} 
+                onClose={() => setOpen(false)}
+            >
+                <DialogTitle className='font-annie! font-bold! text-4xl! bg-[#283618] text-primary!'>
+                    Welcome!
+                </DialogTitle>
+                <DialogContent className='bg-[#283618]'>
+                    <DialogContentText className='font-urbanist! text-primary!'>
+                        Try flipping some cards :)
+                </DialogContentText>
+                </DialogContent>
+                <DialogActions className='bg-[#283618]'>
+                    <Button onClick={() => setOpen(false)} className='font-urbanist! font-semibold! text-[#8ecae6]!'>
+                        Got it
+                    </Button>
+                </DialogActions>
+            </Dialog>
         </main>
 	);
 }
