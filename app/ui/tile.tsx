@@ -11,6 +11,7 @@ type PropType = {
     background: string;
     height: string;
     data: string[];
+    number: string;
 }
 
 const designPalette: Record<string, string> = {
@@ -34,7 +35,7 @@ const fontSizes: Record<string, string[]> = {
 }
 
 export default function Tile(props : PropType) {
-    const { title, subTitle, background, height, data } = props;
+    const { title, subTitle, background, height, data, number } = props;
     const [flip, setFlip] = React.useState(false);
     const bgColor = designPalette[background] || 'bg-gray-100';
 
@@ -52,21 +53,27 @@ export default function Tile(props : PropType) {
                 component="div"
                 disableTouchRipple
                 onClick={() => setFlip(!flip)} 
-                className={`w-full h-full duration-700 transform-3d transition-transform rounded-md! shadow-xl/40 ${
+                className={`bg-[url('https://www.transparenttextures.com/patterns/groovepaper.png')] ${bgColor} w-full h-full duration-700 transform-3d transition-transform rounded-md! shadow-xl/40 ${
                     flip ? 'transform-[rotateY(180deg)]' : ''
                 }`}    
             >
                 <Stack 
-                    className={`absolute inset-0 w-full h-full items-center justify-center p-6 backface-hidden rounded-md! ${bgColor}`}
+                    className={`absolute inset-0 w-full h-full items-center justify-center p-6 overflow-hidden! backface-hidden rounded-md! `}
                 >
                     <Stack className="text-center! text-primary!">
                         <p className={`font-annie! pb-3! [-webkit-text-stroke:1.4px] ${fontSizes[background][0]}`}>{title}</p>
                         <p className={`font-light font-urbanist! ${fontSizes[background][1]}`}>{subTitle}</p>
                     </Stack>
+
+                    {number !== undefined && (
+                        <div className={`absolute bottom-4 right-4 text-primary! ${fontSizes[background][2]} font-urbanist! font-medium opacity-80 select-none`}>
+                            {number}
+                        </div>
+                    )}
                 </Stack>
 
                 <Stack 
-                    className={`absolute inset-0 w-full h-full items-center justify-center p-6 backface-hidden transform-[rotateY(180deg)] rounded-md! ${bgColor}`}
+                    className={`absolute inset-0 w-full h-full items-center justify-center p-6 overflow-hidden! backface-hidden transform-[rotateY(180deg)] rounded-md!`}
                 >
                     {background === "contact" ? (
                         <Stack className="text-primary! w-full">
@@ -117,6 +124,12 @@ export default function Tile(props : PropType) {
                                 ))}
                             </ul>
                         </Stack>
+                    )}
+
+                    {number !== undefined && (
+                        <div className={`absolute bottom-4 right-4 text-primary! ${fontSizes[background][2]} font-urbanist! font-medium opacity-80 select-none`}>
+                            {number}
+                        </div>
                     )}
                 </Stack>
             </ButtonBase>
