@@ -60,7 +60,7 @@ export default function Tile(props : PropType) {
                     className={`absolute inset-0 w-full h-full items-center justify-center p-6 backface-hidden rounded-md! ${bgColor}`}
                 >
                     <Stack className="text-center! text-primary!">
-                        <p className={`font-annie! pb-3! ${fontSizes[background][0]}`}><b>{title}</b></p>
+                        <p className={`font-annie! pb-3! [-webkit-text-stroke:1.4px] ${fontSizes[background][0]}`}>{title}</p>
                         <p className={`font-light font-urbanist! ${fontSizes[background][1]}`}>{subTitle}</p>
                     </Stack>
                 </Stack>
