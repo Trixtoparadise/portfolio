@@ -53,7 +53,7 @@ export default function Tile(props : PropType) {
                 component="div"
                 disableTouchRipple
                 onClick={() => setFlip(!flip)} 
-                className={`bg-[url('https://www.transparenttextures.com/patterns/groovepaper.png')] ${bgColor} w-full h-full duration-700 transform-3d transition-transform rounded-md! shadow-xl/40 ${
+                className={`bg-[url('https://www.transparenttextures.com/patterns/tex2res5.png')] ${bgColor} w-full h-full duration-700 transform-3d transition-transform rounded-md! shadow-xl/40 ${
                     flip ? 'transform-[rotateY(180deg)]' : ''
                 }`}    
             >

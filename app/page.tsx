@@ -34,7 +34,7 @@ export default function Home() {
                             background="interests"
                             height='grow-[5.5]'
                             number='3'
-                            data={["Studying <b><b>design</b></b>, the foundation of every system known to mankind and applying the lessons on my <b><b>applications</b></b>, studying the balance relationship between <b><b>form</b></b> and <b><b>function</b></b>, and how it affects the <b><b>user experience</b></b> and <b><b>interaction</b></b>."]}
+                            data={["Studying <b><b>design</b></b>, the foundation of every system known to mankind and applying the lessons on my <b><b>applications</b></b>, studying the relationship between <b><b>form</b></b> and <b><b>function</b></b>, and how it affects the <b><b>user experience</b></b> and <b><b>interaction</b></b>."]}
                         />
                     </Stack>
                     <Stack
@@ -84,7 +84,7 @@ export default function Home() {
                             background="education"
                             height='grow-3'
                             number='5'
-                            data={['I studied at <b><b>Phumzile Secondary School</b></b> and earned a <b><b>National Senior Certificate</b></b> in January 2018.', 'I went on to study <b><b>Computer Science and Applied Mathematics</b></b> at <b><b>Wits University</b></b> and earned a Bachelor of Science in April 2023.']}
+                            data={['I studied at <b><b>Phumzile Secondary School</b></b> and earned a <b><b>National Senior Certificate</b></b> in January 2018.', 'I went on to study at <b><b>Wits University</b></b> and earned a Bachelor of Science in <b><b>Computer Science and Applied Mathematics</b></b>, June 2022.']}
                         />
                     </Stack>
                 </Stack>
@@ -111,7 +111,7 @@ export default function Home() {
                             background="interests"
                             height='grow-3'
                             number='3'
-                            data={["Studying <b><b>design</b></b>, the foundation of every system known to mankind and applying the lessons on my <b><b>applications</b></b>, studying the balance relationship between <b><b>form</b></b> and <b><b>function</b></b>, and how it affects the <b><b>user experience</b></b> and <b><b>interaction</b></b>."]}
+                            data={["Studying <b><b>design</b></b>, the foundation of every system known to mankind and applying the lessons on my <b><b>applications</b></b>, studying the relationship between <b><b>form</b></b> and <b><b>function</b></b>, and how it affects the <b><b>user experience</b></b> and <b><b>interaction</b></b>."]}
                         />
                         <Tile 
                             title="Experience"
@@ -156,7 +156,7 @@ export default function Home() {
                             background="education"
                             height='grow-3'
                             number='5'
-                            data={['I studied at <b><b>Phumzile Secondary School</b></b> and earned a <b><b>National Senior Certificate</b></b> in January 2018.', 'I went on to study <b><b>Computer Science and Applied Mathematics</b></b> at <b><b>Wits University</b></b> and earned a Bachelor of Science in April 2023.']}
+                            data={['I studied at <b><b>Phumzile Secondary School</b></b> and earned a <b><b>National Senior Certificate</b></b> in January 2018.', 'I went on to study at <b><b>Wits University</b></b> and earned a Bachelor of Science in <b><b>Computer Science and Applied Mathematics</b></b>, June 2022.']}
                         />
                     </Stack>
                 </Stack>
@@ -182,7 +182,7 @@ export default function Home() {
                             background="interests"
                             height='h-95'
                             number='2'
-                            data={["Studying <b><b>design</b></b>, the foundation of every system known to mankind and applying the lessons on my <b><b>applications</b></b>, studying the balance relationship between <b><b>form</b></b> and <b><b>function</b></b>, and how it affects the <b><b>user experience</b></b> and <b><b>interaction</b></b>."]}
+                            data={["Studying <b><b>design</b></b>, the foundation of every system known to mankind and applying the lessons on my <b><b>applications</b></b>, studying the relationship between <b><b>form</b></b> and <b><b>function</b></b>, and how it affects the <b><b>user experience</b></b> and <b><b>interaction</b></b>."]}
                         />
                         <Tile 
                             title="Technical Skills"
@@ -206,7 +206,7 @@ export default function Home() {
                             background="education"
                             height='h-95'
                             number='5'
-                            data={['I studied at <b><b>Phumzile Secondary School</b></b> and earned a <b><b>National Senior Certificate</b></b> in January 2018.', 'I went on to study <b><b>Computer Science and Applied Mathematics</b></b> at <b><b>Wits University</b></b> and earned a Bachelor of Science in April 2023.']}
+                            data={['I studied at <b><b>Phumzile Secondary School</b></b> and earned a <b><b>National Senior Certificate</b></b> in January 2018.', 'I went on to study at <b><b>Wits University</b></b> and earned a Bachelor of Science in <b><b>Computer Science and Applied Mathematics</b></b>, June 2022.']}
                         />
                         <Tile 
                             title="Experience"
@@ -214,7 +214,7 @@ export default function Home() {
                             background="experience"
                             height='h-90'
                             number='6'
-                            data={['I worked at <b><b>Nkangala District Municipality</b></b> from July 2024 - June 2026 as an <b><b>Information and Communication Technology</b></b> intern. Rotating in different roles within the department as a service desk operator, assistant to the municipality technician or a reporting analyst.']}
+                            data={['I worked at <b><b>Nkangala District Municipality</b></b> from July 2024 - June 2026 as an <b><b>Information and Communication Technology</b></b> intern. Rotating in different roles within the department as a service desk operator, assistant to the municipality technician and a reporting analyst.']}
                         />
                         
                         <Tile 
