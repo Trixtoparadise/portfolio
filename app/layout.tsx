@@ -28,7 +28,7 @@ export default function RootLayout({
 			lang="en"
 			className={`${annieUseYourTelescope.variable} ${urbanist.className} h-full antialiased`}
 		>
-			<body className="relative w-full h-auto md:h-screen lg:h-screen overflow-scroll md:overflow-hidden lg:overflow-hidden flex flex-col bg-background!">
+			<body className="relative w-full h-auto md:h-screen lg:h-screen overflow-scroll md:overflow-hidden lg:overflow-hidden flex flex-col bg-primary!">
                 <div className="absolute inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/skulls.png')] invert! pointer-events-none" />
                 <div className="relative z-10 flex flex-col flex-1">
                     {children}
