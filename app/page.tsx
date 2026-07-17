@@ -47,7 +47,7 @@ export default function Home() {
                             background="skills"
                             height='grow-[6.5]'
                             number='2'
-                            data={['<b><b>Languages:</b></b> C#, C++, Javascript, Typescript.', '<b><b>Backend Frameworks:</b></b> Node.js (Express), ASP.NET Core WebAPI.', '<b><b>Frontend Frameworks:</b></b> React.js, React Native, .NET MAUI', '<b><b>Databases:</b></b>  PostgresSQL, MongoDB Atlas.', '<b><b>Cloud Platforms:</b></b>  Amazon Web Services RDB, Microsoft Azure ASP NET Core Web API, Vercel Next.js application.']}
+                            data={['<b><b>Languages:</b></b> C#, C++, Javascript, Typescript.', '<b><b>Backend Frameworks:</b></b> Node.js (Express), ASP.NET Core WebAPI.', '<b><b>Frontend Frameworks:</b></b> React.js, React Native, .NET MAUI', '<b><b>Databases:</b></b>  PostgreSQL, MongoDB Atlas.', '<b><b>Cloud Platforms:</b></b>  Amazon Web Services RDS, Microsoft Azure App Services, Vercel Next.js application.']}
                         />
                         <Tile 
                             title="Projects"
@@ -140,7 +140,7 @@ export default function Home() {
                             background="skills"
                             height='grow-5'
                             number='2'
-                            data={['<b><b>Languages:</b></b> C#, C++, Javascript, Typescript.', '<b><b>Backend Frameworks:</b></b> Node.js (Express), ASP.NET Core WebAPI.', '<b><b>Frontend Frameworks:</b></b> React.js, React Native, .NET MAUI', '<b><b>Databases:</b></b>  PostgresSQL, MongoDB Atlas.', '<b><b>Cloud Platforms:</b></b>  Amazon Web Services RDB, Microsoft Azure ASP NET Core Web API, Vercel Next.js application.']}
+                            data={['<b><b>Languages:</b></b> C#, C++, Javascript, Typescript.', '<b><b>Backend Frameworks:</b></b> Node.js (Express), ASP.NET Core WebAPI.', '<b><b>Frontend Frameworks:</b></b> React.js, React Native, .NET MAUI', '<b><b>Databases:</b></b>  PostgreSQL, MongoDB Atlas.', '<b><b>Cloud Platforms:</b></b>  Amazon Web Services RDS, Microsoft Azure App Services, Vercel Next.js application.']}
                         />
                         <Tile 
                             title="Projects"
@@ -190,7 +190,7 @@ export default function Home() {
                             background="skills"
                             height='h-115'
                             number='3'
-                            data={['<b><b>Languages:</b></b> C#, C++, Javascript, Typescript.', '<b><b>Backend Frameworks:</b></b> Node.js (Express), ASP.NET Core WebAPI.', '<b><b>Frontend Frameworks:</b></b> React.js, React Native, .NET MAUI', '<b><b>Databases:</b></b>  PostgresSQL, MongoDB Atlas.', '<b><b>Cloud Platforms:</b></b>  Amazon Web Services RDB, Microsoft Azure ASP NET Core Web API, Vercel Next.js application.']}
+                            data={['<b><b>Languages:</b></b> C#, C++, Javascript, Typescript.', '<b><b>Backend Frameworks:</b></b> Node.js (Express), ASP.NET Core WebAPI.', '<b><b>Frontend Frameworks:</b></b> React.js, React Native, .NET MAUI', '<b><b>Databases:</b></b>  PostgreSQL, MongoDB Atlas.', '<b><b>Cloud Platforms:</b></b>  Amazon Web Services RDS, Microsoft Azure App Services, Vercel Next.js application.']}
                         />
                         <Tile 
                             title="Projects"
